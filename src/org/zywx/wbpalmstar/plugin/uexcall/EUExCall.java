@@ -18,27 +18,6 @@ public class EUExCall extends EUExBase {
 	}
 
 	/**
-	 * params[0]-->电话号码
-	 * 
-	 * @param params
-	 */
-	public void call(String[] params) {
-		if (params.length > 0) {
-			try {
-				Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + params[0]));// 直接拨打
-				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-				mContext.startActivity(intent);
-			} catch (ActivityNotFoundException e) {
-				Toast.makeText(mContext, finder.getString("can_not_find_suitable_app_perform_this_operation"),
-						Toast.LENGTH_SHORT).show();
-
-			} catch (SecurityException e) {
-				Toast.makeText(mContext, finder.getString("no_permisson_declare"), Toast.LENGTH_SHORT).show();
-			}
-		}
-	}
-
-	/**
 	 * params[0]--->电话号码
 	 * 
 	 * @param params
