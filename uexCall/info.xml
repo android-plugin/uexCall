@@ -2,7 +2,8 @@
 <uexplugins>
     <plugin
         uexName="uexCall" version="3.0.2" build="2">
-        <info>2:兼容老版本插件</info>
+        <info>3:plugin文件中添加call接口，兼容老版本插件</info>
+        <build>2:兼容老版本插件</build>
         <build>1:去掉直接拨打电话的接口</build>
         <build>0:打电话功能插件</build>
     </plugin>
