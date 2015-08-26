@@ -3,8 +3,9 @@
 
     <plugin
         className="org.zywx.wbpalmstar.plugin.uexcall.EUExCall"
-        uexName="uexCall" version="3.0。1" build="1">
+        uexName="uexCall" version="3.0.1" build="1">
         <method name="dial" />
+        <method name="call" />
     </plugin>
 
 </uexplugins>
